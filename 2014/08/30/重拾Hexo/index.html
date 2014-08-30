@@ -6,17 +6,17 @@
   <title>重拾Hexo | BONFY</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="当中有好长一段时间没有更新了，久到Hexo都已经更新了，然后发现以前的设置好像也不管用了，没办法重新再搞一遍吧。貌似目录结构都有些不一样了，不过一切都过去了，现在应该可以了
-To be continued">
+不过整个下午也发现了一个Hexo的BUG，估计跟 themes有关，整了好久，由于Hexo的默认主题：landscape 是用Google字体的，大家都懂的，对于天朝的用户这是可望不可及的，加载不到导致整个页面的渲染都变慢了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="重拾Hexo">
 <meta property="og:url" content="http://blog.bonfy.im/2014/08/30/重拾Hexo/">
 <meta property="og:site_name" content="BONFY">
 <meta property="og:description" content="当中有好长一段时间没有更新了，久到Hexo都已经更新了，然后发现以前的设置好像也不管用了，没办法重新再搞一遍吧。貌似目录结构都有些不一样了，不过一切都过去了，现在应该可以了
-To be continued">
+不过整个下午也发现了一个Hexo的BUG，估计跟 themes有关，整了好久，由于Hexo的默认主题：landscape 是用Google字体的，大家都懂的，对于天朝的用户这是可望不可及的，加载不到导致整个页面的渲染都变慢了。">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="重拾Hexo">
 <meta name="twitter:description" content="当中有好长一段时间没有更新了，久到Hexo都已经更新了，然后发现以前的设置好像也不管用了，没办法重新再搞一遍吧。貌似目录结构都有些不一样了，不过一切都过去了，现在应该可以了
-To be continued">
+不过整个下午也发现了一个Hexo的BUG，估计跟 themes有关，整了好久，由于Hexo的默认主题：landscape 是用Google字体的，大家都懂的，对于天朝的用户这是可望不可及的，加载不到导致整个页面的渲染都变慢了。">
 
   
     <link rel="alternative" href="/atom.xml" title="BONFY" type="application/atom+xml">
@@ -88,6 +88,12 @@ To be continued">
     <div class="article-entry" itemprop="articleBody">
       
         <p>当中有好长一段时间没有更新了，久到Hexo都已经更新了，然后发现以前的设置好像也不管用了，没办法重新再搞一遍吧。<br>貌似目录结构都有些不一样了，不过一切都过去了，现在应该可以了</p>
+<p>不过整个下午也发现了一个Hexo的BUG，估计跟 themes有关，整了好久，由于Hexo的默认主题：landscape 是用Google字体的，大家都懂的，对于天朝的用户这是可望不可及的，加载不到导致整个页面的渲染都变慢了。以前都是在生成的public文件夹下 直接改index.html的，但是每次生成都会被覆盖，所以想整个一劳永逸的办法。<br>寻找官方的themes，发现有中国用户做了个大陆版的landscape：名曰landscape－plus；主要有两个要吐槽的点，一个是link字体是红色，太吓人，另外是 加了个友联，都是广告。。。<br>想想还是自己改theme吧。。。结果自己在landscape里面如何改，字体都是红色了。。。</p>
+<p>最后解决方法，重新 hexo init生成新的文件夹，然后将以前的文章copy进post，重新生成<br>然后再在 themes/landscape/layout/_partial/header.ejs 中将</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"&gt;</div></pre></td></tr></table></figure>
+
+<p>这句话给注释</p>
+<p>太折腾人了，今天就到此为止，无力为继</p>
 <p>To be continued</p>
 
       
