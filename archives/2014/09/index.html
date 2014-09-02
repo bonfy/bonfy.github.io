@@ -64,6 +64,104 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-flask与Angularjs共用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/09/02/flask与Angularjs共用/" class="article-date">
+  <time datetime="2014-09-02T11:55:34.000Z" itemprop="datePublished">9月 2 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/09/02/flask与Angularjs共用/">flask与Angularjs共用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>解决办法 1：<br>替换 AngularJS 中使用的标识符</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">app = angular.module('TheApp', [], ($interpolateProvider) -&gt;</div><div class="line">  $interpolateProvider.startSymbol('{$')</div><div class="line">  $interpolateProvider.endSymbol('$}')</div><div class="line">)</div></pre></td></tr></table></figure>
+
+<p>cmd<br>解决办法 2（推荐）：<br>替换 Jinja2 中使用的标识符（在 Flask 下）</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">app.jinja_env.variable_start_string = <span class="string">'${'</span></div><div class="line">app.jinja_env.variable_end_string = <span class="string">'}'</span></div></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.bonfy.im/2014/09/02/flask与Angularjs共用/" data-id="f86xnud7vt3x22q4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Angularjs/">Angularjs</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/09/02/hello-world/" class="article-date">
+  <time datetime="2014-09-02T11:52:32.000Z" itemprop="datePublished">9月 2 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/09/02/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2>
+<h3 id="Create_a_new_post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.bonfy.im/2014/09/02/hello-world/" data-id="0l87k512g7m5zx7q" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-加油加油" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2014/09/01/加油加油/" class="article-date">
@@ -92,7 +190,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.bonfy.im/2014/09/01/加油加油/" data-id="3wcfbrmcan90myiz" class="article-share-link">Share</a>
+      <a data-url="http://blog.bonfy.im/2014/09/01/加油加油/" data-id="tp1t4qnqk8r5dmhd" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/闲话/">闲话</a></li></ul>
@@ -115,7 +213,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/闲话/">闲话</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Angularjs/">Angularjs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/闲话/">闲话</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -124,7 +222,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/blog/" style="font-size: 20.00px;">blog</a><a href="/tags/闲话/" style="font-size: 10.00px;">闲话</a>
+      <a href="/tags/Angularjs/" style="font-size: 10.00px;">Angularjs</a><a href="/tags/blog/" style="font-size: 20.00px;">blog</a><a href="/tags/闲话/" style="font-size: 10.00px;">闲话</a>
     </div>
   </div>
 
@@ -133,7 +231,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09">September 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08">August 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01">January 2014</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09">September 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08">August 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01">January 2014</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -145,6 +243,14 @@
       <ul>
         
           <li>
+            <a href="/2014/09/02/flask与Angularjs共用/">flask与Angularjs共用</a>
+          </li>
+        
+          <li>
+            <a href="/2014/09/02/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
             <a href="/2014/09/01/加油加油/">加油加油</a>
           </li>
         
@@ -154,14 +260,6 @@
         
           <li>
             <a href="/2014/01/05/blog同步/">blog同步</a>
-          </li>
-        
-          <li>
-            <a href="/2014/01/01/一些常识/">一些常识</a>
-          </li>
-        
-          <li>
-            <a href="/2014/01/01/写在201411/">写在2014.1.1</a>
           </li>
         
       </ul>
@@ -176,7 +274,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2014 <a href="http://www.bonfy.im/" target="_blank">BONFY</a><br>
+      &copy; 2014 <a href="http://www.bonfy.im" target="_blank">BONFY</a><br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
