@@ -64,6 +64,56 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-一些常识" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/01/01/一些常识/" class="article-date">
+  <time datetime="2014-01-01T07:16:03.000Z" itemprop="datePublished">1月 1 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/01/01/一些常识/">一些常识</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>写这个的目的主要是为了不要再在这么多网站中奔来跑去浪费时间</p>
+<p>如果windows下运行 jekyll 有UTF-8中文问题 请输入命令：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chcp <span class="number">65001</span></div></pre></td></tr></table></figure>
+
+<p>在windows下安装 jekyll 可能会报错，原因见 <a href="http://www.cnblogs.com/yevon/p/3310857.html" target="_blank" rel="external">叶子的博客</a><br>这里长话短说： pygmens.rb 版本太高需要降低</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gem install pygments.rb --version <span class="string">"=0.5.0"</span></div><div class="line">gem uninstall pygments.rb --version <span class="string">"=0.5.2"</span> (视你的版本号而定)</div></pre></td></tr></table></figure>
+
+<p>关于github push代码</p>
+<figure class="highlight git"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">add</span> .</div><div class="line">git commit -<span class="keyword">am</span> <span class="string">"message"</span></div><div class="line">git push</div></pre></td></tr></table></figure>
+
+<p>这里说说我的blog</p>
+<p>打算在github上部署自己的blog，然后域名重定向<br>github官网推荐jekyll，我一开始也是那么干的<br>后来看到大家推荐 Hexo，也算尝试了一把，的确还是比较容易上手的</p>
+<p>研究不深，还望谅解（见<a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">ibruce的blog</a>,这个写的比较深入)<br>当然hexo 部署是非常简单的，配置好_config.yml<br>Hexo deploy就行</p>
+<p>目前比较纠结：deploy会盖掉CNAME，每次自己建太麻烦，就没有增量部署么？</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.bonfy.im/2014/01/01/一些常识/" data-id="ji0qvm6ztvqfilaz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-写在201411" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2014/01/01/写在201411/" class="article-date">
@@ -118,7 +168,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Angularjs/">Angularjs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Flask-Rest/">Flask-Rest</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node/">Node</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/weixin/">weixin</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/闲话/">闲话</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Angularjs/">Angularjs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Flask-Rest/">Flask-Rest</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node/">Node</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/weixin/">weixin</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/闲话/">闲话</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -127,7 +177,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Angularjs/" style="font-size: 10.00px;">Angularjs</a><a href="/tags/Flask-Rest/" style="font-size: 20.00px;">Flask-Rest</a><a href="/tags/Node/" style="font-size: 10.00px;">Node</a><a href="/tags/blog/" style="font-size: 20.00px;">blog</a><a href="/tags/weixin/" style="font-size: 10.00px;">weixin</a><a href="/tags/闲话/" style="font-size: 10.00px;">闲话</a>
+      <a href="/tags/Angularjs/" style="font-size: 10.00px;">Angularjs</a><a href="/tags/Flask-Rest/" style="font-size: 20.00px;">Flask-Rest</a><a href="/tags/Node/" style="font-size: 10.00px;">Node</a><a href="/tags/blog/" style="font-size: 20.00px;">blog</a><a href="/tags/weixin/" style="font-size: 20.00px;">weixin</a><a href="/tags/闲话/" style="font-size: 10.00px;">闲话</a>
     </div>
   </div>
 
@@ -136,7 +186,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09">September 2014</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08">August 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01">January 2014</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09">September 2014</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08">August 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01">January 2014</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -146,6 +196,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2014/09/20/Shrimp更新/">Shrimp更新</a>
+          </li>
         
           <li>
             <a href="/2014/09/17/微信公众平台Shrimp/">微信公众平台Shrimp</a>
@@ -161,10 +215,6 @@
         
           <li>
             <a href="/2014/09/07/Protractor/">Protractor</a>
-          </li>
-        
-          <li>
-            <a href="/2014/09/02/flask与Angularjs共用/">flask与Angularjs共用</a>
           </li>
         
       </ul>
