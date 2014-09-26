@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.bonfy.im/"/>
-  <updated>2014-09-20T12:54:59.928Z</updated>
+  <updated>2014-09-26T12:58:17.566Z</updated>
   <id>http://blog.bonfy.im/</id>
   
   <author>
@@ -15,11 +15,37 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[装机的痛]]></title>
+    <link href="http://blog.bonfy.im/2014/09/26/%E8%A3%85%E6%9C%BA%E7%9A%84%E7%97%9B/"/>
+    <id>http://blog.bonfy.im/2014/09/26/装机的痛/</id>
+    <published>2014-09-26T12:46:45.000Z</published>
+    <updated>2014-09-26T12:55:51.000Z</updated>
+    <content type="html"><![CDATA[<p>好久不更新了，以前的学习计划也被打乱了，究其原因，还是太折腾，还是太年轻</p>
+<p>这几天发生的事情简要描述下：</p>
+<p>就是为了在MAC下面装Scrapy，结果Scrapy最后成功安装，但是第二天全部悲剧</p>
+<p>因为MAC自带的Python 安装不了Scrapy，至少我是这么觉得，然后网上各种找解决办法，最终卸载自带的Python，又去下了个Python 2.7，结果顺利完成了Scrapy的安装</p>
+<p>烦心的事第二天来了，打开Xcode，我擦LLDB 不能调试，打开iphoto，报错<br>查看日志，都是万恶的Python找不到，或者版本不对</p>
+<p>我晕！！！恢复 MAC自带Python的方法找不到，只能重装了</p>
+<p>当然重装过MAC的人应该知道，那将是个遥遥无期的等待，反正我装了24小时，现在才在这里给你写这个。。。</p>
+<p>所以以后大家知道，MAC自带的库，或者 Lib，千万就别去碰了，不就一个Scrapy么，搞个Linux或者Windows去搞吧</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>好久不更新了，以前的学习计划也被打乱了，究其原因，还是太折腾，还是太年轻</p>
+<p>这几天发生的事情简要描述下：</p>
+<p>就是为了在MAC下面装Scrapy，结果Scrapy最后成功安装，但是第二天全部悲剧</p>
+<p>因为MAC自带的Python 安装不了Sc]]>
+    </summary>
+    
+      <category term="闲话" scheme="http://blog.bonfy.im/tags/%E9%97%B2%E8%AF%9D/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Shrimp更新]]></title>
     <link href="http://blog.bonfy.im/2014/09/20/Shrimp%E6%9B%B4%E6%96%B0/"/>
     <id>http://blog.bonfy.im/2014/09/20/Shrimp更新/</id>
     <published>2014-09-20T12:47:32.000Z</published>
-    <updated>2014-09-20T12:54:49.000Z</updated>
+    <updated>2014-09-20T12:54:48.000Z</updated>
     <content type="html"><![CDATA[<p>微信公众账号：Shrimp 更新 </p>
 <p><img src="http://bonfy.qiniudn.com/weixin.jpg" alt=""></p>
 <p>最主要是某云太坑，更新了一天，经常部署不上去：</p>
@@ -51,7 +77,7 @@
     <link href="http://blog.bonfy.im/2014/09/17/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%B9%B3%E5%8F%B0Shrimp/"/>
     <id>http://blog.bonfy.im/2014/09/17/微信公众平台Shrimp/</id>
     <published>2014-09-17T15:30:53.000Z</published>
-    <updated>2014-09-20T12:48:57.000Z</updated>
+    <updated>2014-09-20T12:48:56.000Z</updated>
     <content type="html"><![CDATA[<p>微信公众账号：Shrimp 上线 ！！</p>
 <p><img src="http://bonfy.qiniudn.com/weixin.jpg" alt=""></p>
 <p>主要看了下 微信公众订阅号的功能，以及如何利用flask进行开发</p>
@@ -179,37 +205,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://blog.bonfy.im/2014/09/02/hello-world/"/>
-    <id>http://blog.bonfy.im/2014/09/02/hello-world/</id>
-    <published>2014-09-02T11:52:32.000Z</published>
-    <updated>2014-09-02T11:52:32.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[加油加油]]></title>
     <link href="http://blog.bonfy.im/2014/09/01/%E5%8A%A0%E6%B2%B9%E5%8A%A0%E6%B2%B9/"/>
     <id>http://blog.bonfy.im/2014/09/01/加油加油/</id>
@@ -233,7 +228,7 @@
     <link href="http://blog.bonfy.im/2014/08/30/%E9%87%8D%E6%8B%BEHexo/"/>
     <id>http://blog.bonfy.im/2014/08/30/重拾Hexo/</id>
     <published>2014-08-30T05:25:21.000Z</published>
-    <updated>2014-08-30T08:14:01.000Z</updated>
+    <updated>2014-08-30T08:14:00.000Z</updated>
     <content type="html"><![CDATA[<p>当中有好长一段时间没有更新了，久到Hexo都已经更新了，然后发现以前的设置好像也不管用了，没办法重新再搞一遍吧。<br>貌似目录结构都有些不一样了，不过一切都过去了，现在应该可以了</p>
 <p>不过整个下午也发现了一个Hexo的BUG，估计跟 themes有关，整了好久，由于Hexo的默认主题：landscape 是用Google字体的，大家都懂的，对于天朝的用户这是可望不可及的，加载不到导致整个页面的渲染都变慢了。以前都是在生成的public文件夹下 直接改index.html的，但是每次生成都会被覆盖，所以想整个一劳永逸的办法。<br>寻找官方的themes，发现有中国用户做了个大陆版的landscape：名曰landscape－plus；主要有两个要吐槽的点，一个是link字体是红色，太吓人，另外是 加了个友联，都是广告。。。<br>想想还是自己改theme吧。。。结果自己在landscape里面如何改，字体都是红色了。。。</p>
 <p>最后解决方法，重新 hexo init生成新的文件夹，然后将以前的文章copy进post，重新生成<br>然后再在 themes/landscape/layout/_partial/header.ejs 中将</p>
@@ -257,7 +252,7 @@
     <link href="http://blog.bonfy.im/2014/01/05/blog%E5%90%8C%E6%AD%A5/"/>
     <id>http://blog.bonfy.im/2014/01/05/blog同步/</id>
     <published>2014-01-05T06:40:35.000Z</published>
-    <updated>2014-08-28T15:38:49.000Z</updated>
+    <updated>2014-08-28T15:38:48.000Z</updated>
     <content type="html"><![CDATA[<p>blog建立的初衷是 你经常有很多东西去google或者baidu，当然一般你查到了你想要的东西你一般都会直接将这个网页设置为书签，但是这个还是会有两个问题：</p>
 <ol>
 <li>书签多了之后，如何管理？我就发现很多我以前找到过的有用的文章或者知识点，后来想起就很难再找到了</li>
@@ -293,7 +288,7 @@
     <link href="http://blog.bonfy.im/2014/01/01/%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%AF%86/"/>
     <id>http://blog.bonfy.im/2014/01/01/一些常识/</id>
     <published>2014-01-01T07:16:03.000Z</published>
-    <updated>2014-08-28T15:38:49.000Z</updated>
+    <updated>2014-08-28T15:38:48.000Z</updated>
     <content type="html"><![CDATA[<p>写这个的目的主要是为了不要再在这么多网站中奔来跑去浪费时间</p>
 <p>如果windows下运行 jekyll 有UTF-8中文问题 请输入命令：</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chcp <span class="number">65001</span></div></pre></td></tr></table></figure>
@@ -322,7 +317,7 @@
     <link href="http://blog.bonfy.im/2014/01/01/%E5%86%99%E5%9C%A8201411/"/>
     <id>http://blog.bonfy.im/2014/01/01/写在201411/</id>
     <published>2014-01-01T06:36:03.000Z</published>
-    <updated>2014-08-28T15:38:49.000Z</updated>
+    <updated>2014-08-28T15:38:48.000Z</updated>
     <content type="html"><![CDATA[<p>写在2014年.1.1</p>
 <p>预祝在新的一年中我能坚持下去</p>
 <p>加油！！！~~~</p>
