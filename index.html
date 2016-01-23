@@ -1,62 +1,53 @@
-<!doctype html>
-<html>
-	<meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Home page of BONFY</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
-<div class="vi">
-    <div class="sidebar">
-        <div class="header">
-            <h1>BONFY</h1>
-            <div class="quote">
-		<p class="quote-text animate-init"><strong>因上努力,果上随缘</strong></p>
-            </div>
-        </div>
-        <div class="menu">
-            <a href="https://github.com/bonfy" class="animate-init">GitHub</a>
-            <a href="http://www.bonfy.im/blog" class="animate-init">Blog</a>
-            <a href="https://github.com/bonfy/bonfy.github.io/wiki" class="animate-init">Wiki</a>
-        </div>
-        <div class="location">
-            <i class="location-icon"></i>
-            <span class="location-text animate-init">Shanghai - China</span>
-        </div>
-    </div>
+<!DOCTYPE HTML>
 
-    <div class="content">
-        <span class="close">close</span>
-    </div>
-</div>
-<script type="text/javascript" src="assets/js/jquery.js"></script>
-<script>
-    $(document).ready(function () {
-        var delay = 1;
-        var DELAY_STEP = 200;
-        var animationOptions = { opacity: 1, top: 0};
-        $('h1').animate(animationOptions).promise()
-                .pipe(animateMain)
-                .pipe(animateLocationIcon);
-        function animateMain() {
-            var dfd = $.Deferred();
-            var els = $('.animate-init');
-            var size = els.size();
-            els.each(function (index, el) {
-                delay++;
-                $(el).delay(index * DELAY_STEP)
-                        .animate(animationOptions);
-                (size - 1 === index) && dfd.resolve();
-            });
-            return dfd.promise();
-        }
-        function animateLocationIcon() {
-            $('.location-icon').delay(delay * DELAY_STEP).animate({
-                opacity: 1,
-                top: 0
-            }).promise().done(animationQuote);
-        }
-        function animationQuote() {}
-    });
-</script>
-</body>
+<html>
+	<head>
+		<title>BONFY 的主页</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="stylesheet" href="assets/css/bonfy.css"/>
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+
+						<a href="http://bonfy.im" title="前往 BONFY 的主页">
+							<img src="assets/css/images/favicon.jpg" width="80" alt="BONFY logo" class="panel-cover__logo logo">
+						</a>
+
+						<h1>BONFY</h1>
+						<p>因上努力 , 果上随缘</p>
+						<nav>
+							<ul>
+								<li><a href="http://www.bonfy.im/blog/" class="icon fa-bold"><span class="label">Blog</span></a></li>
+								<li><a href="https://twitter.com/foreverbonfy" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/bonfy" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="mailto:foreverbonfy@163.com" class="icon fa-envelope-o"><span class="label">邮件联系我</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; BONFY 2016</span>
+					</footer>
+
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
 </html>
